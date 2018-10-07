@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-//import {SchoolService} from '../../services/school.service';
+import {SchoolService} from '../../services/school.service';
 
 @Component({
   selector: 'app-login',
@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  constructor(  ) {
+  constructor(private schoolService : SchoolService ) {
   }
 
   ngOnInit() {
@@ -16,7 +16,8 @@ export class LoginComponent implements OnInit {
 
   GetLogin()
   {
-     //this.schoolService.getSchool()
+    var schoolvalue = this.schoolService.getSchool()
+    console.log(schoolvalue);
   }
 
 }
