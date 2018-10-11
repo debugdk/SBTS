@@ -11,8 +11,9 @@ import { RouterModule, Routes  } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 
 const appRoutes: Routes = [
-  {path : '', component : StudentComponent},
-  {path : 'student', component: StudentComponent }
+  {path : '', component : LoginComponent},
+  {path : 'student', component: StudentComponent },
+  {path: 'login', component: LoginComponent }
 ];
 
 @NgModule({

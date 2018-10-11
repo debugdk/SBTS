@@ -8,16 +8,17 @@ import {SchoolService} from '../../services/school.service';
 })
 export class LoginComponent implements OnInit {
 
-  constructor(private schoolService : SchoolService ) {
-  }
+  constructor (){}
+  // constructor(private schoolService : SchoolService ) {
+  // }
 
   ngOnInit() {
   }
 
-  GetLogin()
-  {
-    var schoolvalue = this.schoolService.getSchool()
-    console.log(schoolvalue);
-  }
+  // GetLogin()
+  // {
+  //   var schoolvalue = this.schoolService.getSchool()
+  //   console.log(schoolvalue);
+  // }
 
 }
