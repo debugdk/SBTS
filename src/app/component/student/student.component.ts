@@ -3,13 +3,15 @@ import {StudentService} from '../../services/student.service';
 import { Router } from '@angular/router';
 import { Http } from '@angular/http';
 
+import { Student } from '../../model/student';
+
 @Component({
   selector: 'app-student',
   templateUrl: './student.component.html',
   styleUrls: ['./student.component.css']
 })
 export class StudentComponent implements OnInit {
-  //student: Student[];
+  student: Student[];
   name:string;
   mobile:string;
   rollNo:string;
@@ -22,7 +24,7 @@ export class StudentComponent implements OnInit {
   school:string;
 
 constructor(
-    private studentservice: StudentComponent,
+    private studentservice: StudentService,
     private router:Router,
     private http:Http
     )
@@ -40,13 +42,7 @@ constructor(
     }
 
   ngOnInit() {
-  }
-  getStudentInfo()
-  {
-    //  this.studentservice.getStudentInfo().subscribe((data: Student[]) => {
-    //   this.student = data;
-    // });
-
-  }
+     var ss =  this.studentservice.getstudent();
+      console.log(ss);
 
 }
