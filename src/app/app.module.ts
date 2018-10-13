@@ -13,7 +13,7 @@ import { FormsModule } from '@angular/forms';
 const appRoutes: Routes = [
   {path : '', component : LoginComponent},
   {path : 'student', component: StudentComponent },
-  {path: 'login', component: LoginComponent }
+  {path : 'login', component: LoginComponent }
 ];
 
 @NgModule({
