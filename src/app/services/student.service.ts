@@ -3,6 +3,8 @@ import { Http, Headers } from '@angular/http';
 import { HttpModule } from '@angular/http';
 import 'rxjs/add/operator/map';
 
+import {Student} from '../component/student/model/student';
+
 @Injectable({
   providedIn: 'root'
 })

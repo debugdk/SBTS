@@ -9,10 +9,11 @@
       </span>
 
       <div class="wrap-input100 validate-input" data-validate = "Select School">
-        <select class="form-control">
-          <option>Select School</option>
-          <option>DPS</option>
-          <option>DAV</option>
+        <select class="form-control" >
+          <option value="">--Select School--</option>
+                                      <option value="{{school.SchoolID}}" *ngFor="let school of schools">
+                                        {{school.SchoolName}}
+                                      </option>
         </select>
       </div>
       <div class="wrap-input100 validate-input" data-validate = "Select School">
